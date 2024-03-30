@@ -1,0 +1,28 @@
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://www.flightstats.com/v2/')
+
+WebUI.delay(0)
+
+WebUI.click(findTestObject('Object Repository/Page_FlightStats - Global Flight Status  Tr_969cc0/span_CREATE ACCOUNT'))
+
+WebUI.click(findTestObject('Object Repository/Page_Create a New Account/button_Accept All Cookies'))
+
+WebUI.click(findTestObject('Object Repository/Page_Create a New Account/span_SELECT'))
+
+WebUI.click(findTestObject('Object Repository/Page_Create a New Account/span_I WANT THIS PLAN'))
+
+WebUI.setText(findTestObject('Object Repository/Page_Create a New Account/input_Email_email'), 'ashokinjam23@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Create a New Account/input_Enter a Password_password'), '9YJ4higH3j4/Vrjv/QxQCQ==')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_Create a New Account/input_Confirm Password_passwordConfirmation'), 
+    '9YJ4higH3j4/Vrjv/QxQCQ==')
+
+WebUI.click(findTestObject('Object Repository/Page_Create a New Account/input_Special characters (eg. )_agreeTermsC_c0ddb7'))
+
+WebUI.click(findTestObject('Object Repository/Page_Create a New Account/span_Continue'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Page_FlightStats - Completion/h2_Thank you'), 0)
+
+WebUI.closeBrowser()
