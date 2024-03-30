@@ -1,0 +1,19 @@
+WebUI.openBrowser('')
+
+WebUI.maximizeWindow()
+
+WebUI.navigateToUrl('https://www.flightstats.com/v2/')
+
+WebUI.click(findTestObject('Object Repository/Page_FlightStats - Global Flight Status  Tr_969cc0/span_Login'))
+
+WebUI.click(findTestObject('Object Repository/Page_FlightStats - Login/div_Copyright_onetrust-pc-dark-filter ot-fade-in'))
+
+WebUI.click(findTestObject('Object Repository/Page_FlightStats - Login/button_Accept All Cookies'))
+
+WebUI.setText(findTestObject('Object Repository/Page_FlightStats - Login/input_Email Address_account-input'), 'ashok.nani8@gmail.com')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_FlightStats - Login/input_Password_account-input'), 'qK1jlNRXbreDvho4gwh0ug==')
+
+WebUI.click(findTestObject('Object Repository/Page_FlightStats - Login/span_LOG IN'))
+
+WebUI.closeBrowser()
